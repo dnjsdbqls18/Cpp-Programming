@@ -1,0 +1,5 @@
+﻿main.obj : error LNK2005: main이(가) 20240401_4.obj에 이미 정의되어 있습니다.
+time.obj : error LNK2005: "public: __cdecl Time::Time(int,int)" (??0Time@@QEAA@HH@Z)이(가) 20240401_4.obj에 이미 정의되어 있습니다.
+time.obj : error LNK2005: "public: void __cdecl Time::ine_hour(void)" (?ine_hour@Time@@QEAAXXZ)이(가) 20240401_4.obj에 이미 정의되어 있습니다.
+time.obj : error LNK2005: "public: void __cdecl Time::print(void)" (?print@Time@@QEAAXXZ)이(가) 20240401_4.obj에 이미 정의되어 있습니다.
+C:\202315024 미래모빌리티공학과 원유빈\HL만도 소프트웨어\20240401_4\x64\Debug\20240401_4.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
