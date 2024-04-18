@@ -9,24 +9,24 @@ int main()
     char oper;
     double sum = 0;
 
-    cout << "X °ª: ";
+    cout << "X ê°’: ";
     cin >> x;
 
     while (1)
     {
-        cout << "¿¬»êÀÚ: ";
+        cout << "ì—°ì‚°ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš”: ";
         cin >> oper;
 
         if (oper == 'Q')
         {
             cout << "\n";
-            cout << "Á¾·á" << endl;
+            cout << "ì¢…ë£Œ" << endl;
             break;
         }
 
         if (oper != 'C')
         {
-            cout << "Y °ª: ";
+            cout << "Y ê°’: ";
             cin >> y;
         }
 
