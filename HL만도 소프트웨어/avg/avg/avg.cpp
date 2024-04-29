@@ -13,10 +13,10 @@ int main()
     int student_ids[index] = { 0 };
     double avg_scores[] = { 100 };
 
-    // 2Â÷¿ø ¹è¿­À» ÀÌ¿ëÇÏ¿© 10¸íÀ¸·ÎºÎÅÍ 3°³ÀÇ °ú¸ñÀ» ÀÔ·Â ¹Ş°í Æò±Õ ¹Ş°í Æò±Õ°ª ÀúÀå
+    // 2ì°¨ì› ë°°ì—´ì„ ì´ìš©í•˜ì—¬ 10ëª…ìœ¼ë¡œë¶€í„° 3ê°œì˜ ê³¼ëª©ì„ ì…ë ¥ ë°›ê³  í‰ê·  ë°›ê³  í‰ê· ê°’ ì €ì¥
 	for (int i = 0; i < student_num; i++)
 	{
-		printf("% d¹ø ÇĞ»ıÀÇ ±¹¾î ¿µ¾î ¼öÇĞ Á¡¼ö¸¦ ¼ø¼­´ë·Î ÀÔ·ÂÇÏ¼¼¿ä.(ÀÔ·Â°ª 0~100): ", i + 1);
+		printf("% dë²ˆ í•™ìƒì˜ êµ­ì–´ ì˜ì–´ ìˆ˜í•™ ì ìˆ˜ë¥¼ ìˆœì„œëŒ€ë¡œ ì…ë ¥í•˜ì„¸ìš”.(ì…ë ¥ê°’ 0~100): ", i + 1);
 		scanf("%d %d %d", &kor, &eng, &math);
         scores[i][0] = kor;
         scores[i][1] = eng;
@@ -24,15 +24,15 @@ int main()
         avg[i] = (scores[i][0] + scores[i][1] + scores[i][2]) / 3.0;
 	}
     printf("\n");
-    printf("<10¸íÀÇ ¼ºÀû°ú Æò±Õ°ªÀ» Ãâ·Â>\n");
-    printf("ÇĞ¹ø | ±¹¾î | ¿µ¾î | ¼öÇĞ | Æò±Õ\n");
-    // 10¸íÀÇ ¼ºÀû°ú Æò±Õ°ªÀ» Ãâ·Â
+    printf("<10ëª…ì˜ ì„±ì ê³¼ í‰ê· ê°’ì„ ì¶œë ¥>\n");
+    printf("í•™ë²ˆ | êµ­ì–´ | ì˜ì–´ | ìˆ˜í•™ | í‰ê· \n");
+    // 10ëª…ì˜ ì„±ì ê³¼ í‰ê· ê°’ì„ ì¶œë ¥
     for (int i = 0; i < student_num; i++)
     {
         printf("%2d   | %3d | %3d | %3d | %.2lf\n", i + 1, scores[i][0], scores[i][1], scores[i][2], avg[i]);
     }
 
-    // °ú¸ñº° ÃÖÀú Á¡¼ö¿Í ÇĞ¹ø
+    // ê³¼ëª©ë³„ ìµœì € ì ìˆ˜ì™€ í•™ë²ˆ
     for (int i = 0; i < index; i++) 
     {
         for (int j = 0; j < student_num; j++)
@@ -46,13 +46,13 @@ int main()
     }
 
     printf("\n");
-    printf("<°ú¸ñº° ÃÖÀú Á¡¼ö¿Í ÇĞ¹ø>\n");
-    printf("°ú¸ñ | ÃÖÀú Á¡¼ö | ÇĞ¹ø\n");
-    printf("±¹¾î | %3d | %2d\n", min_scores[0], student_ids[0]);
-    printf("¿µ¾î | %3d | %2d\n", min_scores[1], student_ids[1]);
-    printf("¼öÇĞ | %3d | %2d\n", min_scores[2], student_ids[2]);
+    printf("<ê³¼ëª©ë³„ ìµœì € ì ìˆ˜ì™€ í•™ë²ˆ>\n");
+    printf("ê³¼ëª© | ìµœì € ì ìˆ˜ | í•™ë²ˆ\n");
+    printf("êµ­ì–´ | %3d | %2d\n", min_scores[0], student_ids[0]);
+    printf("ì˜ì–´ | %3d | %2d\n", min_scores[1], student_ids[1]);
+    printf("ìˆ˜í•™ | %3d | %2d\n", min_scores[2], student_ids[2]);
 
-    // Æò±Õ°ªÀÌ ³·Àº ¼ø¼­·Î Ãâ·Â
+    // í‰ê· ê°’ì´ ë‚®ì€ ìˆœì„œë¡œ ì¶œë ¥
     for (int i = 0; i < student_num - 1; i++)
     {
         for (int j = 0; j < student_num - i - 1; j++)
@@ -74,14 +74,12 @@ int main()
     }
 
     printf("\n");
-    printf("<Æò±Õ°ªÀÌ ³·Àº ¼ø¼­·Î Ãâ·Â>\n");
-    printf("ÇĞ¹ø | ±¹¾î | ¿µ¾î | ¼öÇĞ | Æò±Õ\n");
+    printf("<í‰ê· ê°’ì´ ë‚®ì€ ìˆœì„œë¡œ ì¶œë ¥>\n");
+    printf("í•™ë²ˆ | êµ­ì–´ | ì˜ì–´ | ìˆ˜í•™ | í‰ê· \n");
     for (int i = 0; i < student_num; i++)
     {
         printf("%2d   | %3d | %3d | %3d | %.2lf\n", i + 1, scores[i][0], scores[i][1], scores[i][2], avg[i]);
     }
-
-    return 0;
 
     return 0;
 }
